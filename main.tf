@@ -1,10 +1,6 @@
 #PROVIDER
 provider "aws" {
   region                  = var.main_region
-  # shared_credentials_file = "C:\\terraform\\DM\\credentials"
-  # profile                 = "admin"
-  access_key = var.aws_access_key_id
-  secret_key = var.aws_secret_access_key
 }
 
 #DATA
