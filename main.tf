@@ -23,8 +23,9 @@ data "aws_caller_identity" "current" {}
 #RESOURCES
 
 module "vpc" {
-  source = "./modules/vpc"
+  source = "app.terraform.io/Test_Vault/vpc/aws"
   region = var.main_region
+  version = "1.0.2"
 }
 
 #EC2
