@@ -27,7 +27,7 @@ module "vpc" {
 #EC2
 resource "aws_instance" "bas" {
   ami                    = "${data.aws_ssm_parameter.linux.value}"
-  instance_type          = "t2.large"
+  instance_type          = "t2.micro"
   # key_name               = "itrams-dm-platform-uat-dmz-bh-keypair"
   subnet_id              = module.vpc.public_subnet1
   vpc_security_group_ids = [module.vpc.bas_sg]
